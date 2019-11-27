@@ -1,0 +1,291 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* header */
+
+
+/* navbar */
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(img/hero-small.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-menu {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7));
+    padding: 20px;
+}
+
+.custom-navbar {
+    padding: 5px 30px;
+}
+
+.nav-logo {
+    display: inline-block;
+    height: 40px;
+    width: auto;
+}
+
+.menu-item {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #eee;
+    transition: color .5s;
+}
+
+.menu-item:hover {
+    color: #70aed2;
+}
+
+.nav-button:active,
+.nav-button:focus,
+.nav-button:visited {
+    outline: 0 !important;
+    outline-offset: 0 !important;
+    background-image: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/* end of navbar */
+
+
+/* baner */
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-photo {
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+}
+
+.banner-text {
+    animation-name: moveInUp;
+    animation-duration: 2s;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(30px);
+        opacity: .8;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    70% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(-20px);
+    }
+    
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* end of baner */
+
+
+/* mission */
+
+.mission {
+    background: linear-gradient(rgba(0, 112, 250, 0.8), rgba(0, 58, 250, 0.88));
+}
+
+.underline {
+    width: 150px;
+    border: 3px solid #eee;
+    margin: auto;
+}
+
+.mission-card img {
+    width: 30%;
+    height: auto;
+}
+
+
+/* end of mission */
+
+
+/* best selling */
+
+.best-selling {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(img/best-selling-background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.selling-title {
+    background: linear-gradient(rgba(0, 112, 250, 0.8), rgba(0, 58, 250, 0.88));
+}
+
+.fromLeft {
+    animation-name: fromLeft;
+    animation-duration: 3s;
+}
+
+.fromRight {
+    animation-name: fromRight;
+    animation-duration: 3s;
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* end of best selling */
+
+
+/* subscribe */
+
+.subscribe {
+    background: linear-gradient(105deg, rgba(21, 31, 32, .88) 0%, rgba(21, 31, 32, .78) 50%, transparent 50%), url(img/contact-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.input {
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    transition: all .8s;
+}
+
+.input:focus {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #fff;
+    border-bottom: 2px solid #1962a6;
+}
+
+.submit-button {
+    background: #1962a6;
+    color: #eee;
+    transition: all .3s;
+}
+
+.submit-button:hover {
+    background: #0c80ed;
+    transform: translateY(-3px);
+}
+
+.label {
+    color: #777;
+    display: block;
+    margin-top: -70px;
+    margin-left: 4px;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.input:placeholder-shown+.label {
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* end of subscribe */
+
+
+/* contact */
+
+.contact {
+    background: #151f20;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+
+/* end of contact */
+
+
+/* footer */
+
+.footer {
+    background: #333;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+
+/* end of footer */
