@@ -6,4 +6,5 @@
 
 - HTML
 - CSS (Responsive layout)
+- Bootstrap
 - Jquery
